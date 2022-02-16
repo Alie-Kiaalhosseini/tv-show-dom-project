@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+    text-align: center;
+}
+header{
+    color: rgb(212, 196, 196);  
+    background: url('./img/bc.png');
+    width: 100%;
+	height: 35em;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    overflow: hidden;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+}
+header h1{
+    margin: 1em;
+    font-size: 3em;
+}
+header form{
+    display: inline-block;
+    margin-top: 3em;
+    position: absolute;
+    right: 1em;
+    /* float: right; */
+
+}
+form input{
+    background-color: rgba(104, 106, 109, 0.753);
+    padding: 0.5em;
+    width: 25em;
+}
+header select{
+    margin-top: 4em;
+    position: absolute;
+    left: 1em;
+    width: 19em;
+    color: #fff;
+    background-color: rgba(83, 73, 81, 0.001);
+border-radius: 5px;
+}
+option{
+    background-color: rgb(51, 49, 51);
+}
+.filtered{
+    display: none;
+}
+
+
+/* Responsive mood */
+@media only screen and (max-width: 687px) {
+    header select{
+        margin-top: 2em;
+    }
+    select option{
+        font-size: 0.5em;
+    }
+    form{
+        width: 70%;
+        margin: auto;
+        /* display: inline-block; */
+        top: 20em;
+    }
+    form input{
+        width: 25em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    form{
+     /* width: 70%; */
+     /* margin: 0 auto; */
+     text-align: center;
+}
+
+    form label{
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    form input{
+        width: 20em;
+    }
+}
