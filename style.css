@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-   
+   background-color: rgb(17, 3, 19);
     text-align: center;
 }
 header{
@@ -27,8 +27,6 @@ header form{
     margin-top: 3em;
     position: absolute;
     right: 1em;
-    /* float: right; */
-
 }
 form input{
     background-color: rgba(104, 106, 109, 0.753);
@@ -47,6 +45,18 @@ border-radius: 5px;
 option{
     background-color: rgb(51, 49, 51);
 }
+
+/* main */
+main{
+    color: rgb(142, 111, 145);
+    margin: 4em 1.5em ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section{
+    width: 25em;
+}
 .filtered{
     display: none;
 }
@@ -61,10 +71,12 @@ option{
         font-size: 0.5em;
     }
     form{
-        width: 70%;
+         width: 80%;
         margin: auto;
-        /* display: inline-block; */
         top: 20em;
+    }
+    form label{
+        display: inline;
     }
     form input{
         width: 25em;
@@ -72,10 +84,8 @@ option{
 }
 @media only screen and (max-width: 500px) {
     form{
-     /* width: 70%; */
-     /* margin: 0 auto; */
-     text-align: center;
-}
+     width: 90%;
+    }
 
     form label{
         display: block;
