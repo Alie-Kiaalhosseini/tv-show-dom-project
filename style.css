@@ -3,7 +3,8 @@
     margin: 0;
 }
 body{
-   background-color: rgb(17, 3, 19);
+    background: rgb(106,73,101);
+background: linear-gradient(0deg, rgba(106,73,101,1) 1%, rgba(19,12,18,1) 30%, rgba(0,0,0,1) 100%);
     text-align: center;
 }
 header{
@@ -48,7 +49,8 @@ option{
 
 /* main */
 main{
-    color: rgb(142, 111, 145);
+   
+    color: rgb(190, 181, 190);
     margin: 4em 1.5em ;
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +58,36 @@ main{
 }
 section{
     width: 25em;
+    margin-bottom: 1em;
 }
+section img{
+   filter: drop-shadow(1.5mm -0.1mm 2mm rgb(174, 110, 199));
+    width: 23em;
+    border-radius: 3px;
+}
+section h5{
+    margin: 1em 0.1em;
+    font-size: 1em;
+}
+section div{
+    text-align: left;
+    padding: 0.5em;
+}
+section div .bi{
+    color: rgb(153, 40, 228);
+    font-size: 1.2em;
+}
+.clock{
+    margin-right: 0.5em;
+}
+section p{
+    opacity:0;
+    transition:opacity 1000ms;
+}
+.summary:hover + p{
+    opacity:1;
+}
+/* filter class */
 .filtered{
     display: none;
 }
